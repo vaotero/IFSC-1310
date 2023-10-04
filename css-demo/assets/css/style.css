@@ -1,0 +1,76 @@
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /*  --------------- Global Styles -----------------  */
+  body{
+    font-family: 'Saira', sans-serif;
+    margin:0;
+    background-color:#C89AE3  
+  }
+  
+  header.primary{
+    background-color:#E39ACC;
+    color:azure;
+    text-shadow: 1px 1px #000000;
+    text-align:center;
+    padding:40px;
+    /*T,R,B,L*/
+    padding: 20px 40px 20px 40px;
+    /*Two Value Top/bottom / L/R */
+    padding: 20px 40px;
+  }
+
+  
+header.primary h1 {
+  font-size:2.4rem;
+  margin:20px 0 10px;
+}
+
+header.primary h1 a{
+  color:#ffffff;
+  text-decoration:none;
+}
+
+header.primary h2{
+  font-size:1.4rem;
+  margin:0;
+}
+
+header.primary nav{
+  /*background-color: aqua;*/
+  max-width:900px;
+  margin:auto; 
+}
+
+header.primary nav ul{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  padding:0;
+}
+
+header.primary nav ul li{
+  list-style-type:none;
+}
+
+header.primary nav a{
+  color:#ffffff;
+  text-decoration:none;
+  background-color:#000000;
+  background-color:rgba(0,0,0,.5);
+  padding: 5px 10px;
+  border:1px solid #ffffff;
+  border-radius:20px;
+}
+
+header.primaty nav a:hover{
+  background-color:rgba(0,0,0,.8);
+}
+  
