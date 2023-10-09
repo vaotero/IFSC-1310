@@ -1,4 +1,4 @@
-
+/*  --------------- Box Sizing -----------------  */
 html {
     box-sizing: border-box;
   }
@@ -6,6 +6,21 @@ html {
   *:before,
   *:after {
     box-sizing: inherit;
+  }
+
+  /*  --------------- Responsive -----------------  */
+
+  img{
+    max-width:100%;
+    height:auto;
+  }
+
+  /*  --------------- Utility Classes -----------------  */
+
+  .container{
+    max-width:80vw;
+    margin:40px auto;
+
   }
 
   /*  --------------- Global Styles -----------------  */
@@ -70,7 +85,112 @@ header.primary nav a{
   border-radius:20px;
 }
 
-header.primaty nav a:hover{
+header.primary nav a:hover{
   background-color:rgba(0,0,0,.8);
 }
   
+#intro{
+  border-bottom:5px double #000000;
+  padding-bottom:14px
+}
+
+#intro h2{
+  color: #000000;
+  border-bottom:2px solid
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  gap:5%;
+}
+
+#content .post{
+  box-shadow: 0 4px 8px rgba(0,0,0,.4);
+  padding:10px;
+  border-radius:4px;
+  font-size:.8rem;
+}
+
+#content .post:hover{
+  box-shadow: 0 4px 8px rgba(0,0,0,.6);
+}
+
+article.post figure{
+  margin:0;
+}
+
+article.post time.post-date, article.post figcaption,
+article.post .post-meta
+{
+  text-transform:uppercase;
+  color:#c0c0c0;
+}
+
+time.post-date{
+  text-transform:uppercase
+}
+
+article.post a{
+  color: #3b638b;
+}
+
+article.post a:hover{
+  text-decoration:none;
+}
+
+article.post img{
+  border:1px solid #c0c0c0;
+  padding:2px;
+  margin:10px auto;
+  background:#c0c0c0;
+}
+
+aside[role="complementary"]{
+  background-color:#E39ACC;
+  color:#ffffff;
+  padding: 1.9rem;
+}
+
+asside .container{
+  display:flex;
+  flex-direction:row;
+  gap:40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*  --------------- Media Queries -----------------  */
+
+  @media screen and (max-width:600px){
+    header.primary nav ul{
+      flex-direction:column;
+      max-width:250px;
+      margin:auto;
+    }
+    header.primary nav ul a{
+      display:block;
+    }
+    
+  }
