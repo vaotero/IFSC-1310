@@ -23,11 +23,44 @@ html {
 
   }
 
+  .img-right{
+    float:right;
+    margin:10px 0 10px 20px;
+    border:1px solid #000000;
+    padding:5px;
+    background-color:#E39ACC;
+    box-shadow: 4px 4px 1px rgba(0,0,0,.4);
+  }
+
+  .img-left{
+    float:left;
+    margin:10px 20px 10px 0;
+    border:1px solid #000000;
+    padding:5px;
+    background-color:#E39ACC;
+    box-shadow: 4px 4px 1px rgba(0,0,0,.4);
+  }
+
+  .img-center{
+    display:block;
+    margin:20px auto;
+    border:1px solid #000000;
+    padding:5px;
+    background-color:#E39ACC;
+    box-shadow: 4px 4px 1px rgba(0,0,0,.4);
+  }
+
   /*  --------------- Global Styles -----------------  */
   body{
     font-family: 'Saira', sans-serif;
     margin:0;
-    background-color:#C89AE3  
+    /*background-color:#C89AE3;*/ 
+    background-image:url("../img/kitten.jpg");
+    /*background-image:url("https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png");
+    background-repeat:no-repeat;
+    background-size:contain;*/
+   /* background-image:url("https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png");
+    background-repeat:no-repeat;*/
   }
   
   header.primary{
@@ -146,6 +179,14 @@ article.post img{
   background:#c0c0c0;
 }
 
+/*use # when targeting id*/
+#practice h2{
+  color:#000000;
+  border-bottom:2px solid #000000;
+}
+
+
+/*attribute selector*/
 aside[role="complementary"]{
   background-color:#E39ACC;
   color:#ffffff;
@@ -158,8 +199,23 @@ asside .container{
   gap:40px;
 }
 
+aside .container a:last-of-type{
+  color:#ffffff;
+  display:block;
+  text-align:right;
+  font-size:.8rem;
+  margin-top:10px;
+}
 
+aside footer{
+  display:none;
+}
 
+#colophon{
+  background-color:#E39ACC;
+  padding:10px;
+  color:#ffffff;
+}
 
 
 
@@ -193,4 +249,12 @@ asside .container{
       display:block;
     }
     
+    #content {
+      flex-direction:column;
+    }
+
+    #content img{
+      display:block;
+      margin:auto;
+    }
   }
